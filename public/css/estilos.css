@@ -1,0 +1,65 @@
+.link{
+    z-index: 10;
+    margin-top:95%;
+    margin-left: 30%;
+    position: absolute;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    opacity: 0.7;
+}
+.current_page ul li{
+    display: inline-block;
+    color: black;
+   
+}
+
+.current_page ul a {
+    
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.current_page ul li::after {
+    display: inline-block;
+    content: '/';
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+footer{
+    background: lightgray;
+    margin-top: 2%;
+    padding: 1%;
+}
+.link2{
+    z-index: 10;
+    margin-top:25%;
+    margin-left: 35%;
+    position: absolute;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    opacity: 0.7;
+}
+.buy{
+    font-size: 25px;
+    color:  #958181;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+.plus{
+    font-size: 35px;
+    color: lightgrey;
+    margin-bottom: 0px;
+ 
+}
+
+.card-body{
+    background: #DFDEDE;
+   
+}
+footer ul li {
+	font-size: 32px;
+    list-style: none;
+    display: inline-block;  
+}
