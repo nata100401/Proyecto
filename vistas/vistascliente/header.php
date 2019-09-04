@@ -14,14 +14,14 @@ include("carrito.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/estilos.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../styles/bootstrap4/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../styles/product.css">
-    <link rel="stylesheet" type="text/css" href="../styles/product_responsive.css">
-    <link rel="stylesheet" href="css/cart2.css">
-    <link rel="stylesheet" href="css/cart_responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../public/styles/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/styles/product.css">
+    <link rel="stylesheet" type="text/css" href="../../public/styles/product_responsive.css">
+    <link rel="stylesheet" href="../../public/css/cart2.css">
+    <link rel="stylesheet" href="../../public/css/cart_responsive.css">
    
 </head>
       <div class="container">
@@ -69,18 +69,7 @@ include("carrito.php");
                           </a></button>
                       <form class="form-inline my-2 my-lg-0">
                           <button class="btn btn-outline-info my-3 my-sm-0" type="submit" href="login.php"><i class="fas fa-user-circle">
-                          <?php
-                                session_start();
-                                if(!isset($_SESSION['nombre']))
-                                { 
-                                echo 'Inicio de sesión';
-                                }
-                                else
-                                {
-                                echo $_SESSION['nombre']; 
-                                echo '<a href="../ajax/cliente.php?op=salir" >/ Cerrar</a>';
-
-                                } ?>
+                         
                           </i></button>
                       </form>
                   </div>
