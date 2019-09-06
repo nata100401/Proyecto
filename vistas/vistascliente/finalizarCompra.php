@@ -18,13 +18,14 @@
                    
                   
                   
-                       <div class="form-group" action="" method="post">
+                       <div class="form-group" >
                          <label for="">Correo</label>
                          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar su dirección de correo">
-                         <label for="">Contraseña</label>
-                         <input type="password" class="form-control" name="clave" id="clave"  placeholder="Ingresar Contraseña">
+                       
                             <div class="row">
                                 <div class="col-6">
+                              <form action="pagar.php" method="post">
+                              
                                 <label for="">Nombre</label>
                                 <input type="text" class="form-control " name="nombre" id="nombre"  placeholder="Nombre"> 
                                 </div>
@@ -49,22 +50,18 @@
                                 <input type="text" class="form-control " name="direccion" id="direccion"  placeholder="Dirección"> 
                                 </div>
                                 <div class="col-4 ">
-                                    <h4>Medios de pago</h4>
+                                    <h4>Medio de pago</h4>
                                     <label class="form-check-label">
-                                      <input class="form-check-input" type="radio" name="efecty" id="efecty" value="checkedValue">Efecty
+                                    PayPAL<input class="form-check-input" type="radio" name="efecty" id="efecty" value="checkedValue">
                                     </label>
-                                    <label class="form-check-label">
-                                      <input class="form-check-input" type="radio" name="baloto" id="baloto" value="checkedValue">Baloto
-                                    </label>
-
                                 </div>
                             </div>
                                    <label class="form-check-label">
                                      <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
                                      Acepto Terminos y condiciones
                                    </label>
-                                   <button type="button" name="finalizar" value="continuar" id="continuar" class="btn btn-info btn-lg btn-block mt-3">Continuar</button>
-                                 
+                                   <button type="button" name="btnAction" value="proceder" id="continuar" class="btn btn-info btn-lg btn-block mt-3">Finalizar Compra</button>
+                           </form>     
                          </div> 
                      </div>
                    <div class="card-footer text-muted">

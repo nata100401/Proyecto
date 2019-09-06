@@ -1,7 +1,7 @@
 <?php
  include("header.php");
- include("../conexion/conn.php");
- include("carrito.php");
+//  include("../../config/conn.php");
+//  include("carrito.php");
 ?>
   <body>
       <div id="carouselId" class="carousel slide d-sm-none d-md-block d-lg-block " data-ride="carousel">
@@ -12,17 +12,17 @@
           </ol>
           <div class="carousel-inner mt-5" role="listbox">
               <div class="carousel-item active">
-                  <img src="../img/home_slider_1.jpg" height="500" width="100%" alt="First slide">
+                  <img src="../../files/carousel/home_slider_1.jpg" height="500" width="100%" alt="First slide">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
               </div>
               <div class="carousel-item">
-                  <img src="../img/Imagen_Inicio2.jpg" height="500" width="100%" alt="Second slide">
+                  <img src="../../files/carousel/Imagen_Inicio2.jpg" height="500" width="100%" alt="Second slide">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
               </div>
               <div class="carousel-item">
-                  <img src="../img/Imagen_Inicio3.jpg" height="500" width="100%" alt="Third slide">
+                  <img src="../../files/carousel/Imagen_Inicio3.jpg" height="500" width="100%" alt="Third slide">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
               </div>
@@ -43,20 +43,20 @@
                         <div class="card">
                          
                          <p><button type="button"  class="btn btn-info link"><a style="color:white;" href="mujer.php"> Mujer</button>
-                            <img class="card-img-top" height="600" src="../img/product_9.jpg" alt=""></a>
+                            <img class="card-img-top" height="600" src="../../files/carousel/product_11.jpg" alt=""></a>
                         </p> 
                         </div>
                        
                         <div class="card">
                           <button type="button" class="btn btn-info link"><a style="color:white;" href="hombre.php">Hombre</button>
-                          <img class="card-img-top" height="600" src="../img/man.jpeg" alt=""></a>
+                          <img class="card-img-top" height="600" src="../../files/hombre/1fondoHombre.jpeg" alt=""></a>
                           
                          
                               
                         </div>
                         <div class="card">
                                 <button type="button" class="btn btn-info link">Kids</button>
-                                <img class="card-img-top" height="600" src="../img/WhatsApp Image 2019-04-25 at 2.43.57 PM.jpeg" alt="">
+                                <img class="card-img-top" height="600" src="../../files/hombre/niños.jpeg" alt="">
                                
                                     
                               </div>
@@ -69,7 +69,7 @@
                        
                         <div class="card">
                           <button type="button" class="btn btn-info link2">Tejidos</button> 
-                          <img class="card-img-top" height="400" width="100" src="../images/carousel/textiles.jpg" alt="">
+                          <img class="card-img-top" height="400" width="100" src="../../files/carousel/textiles.jpg" alt="">
                           
                         </div>
                       </div>

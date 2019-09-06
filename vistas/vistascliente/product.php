@@ -19,8 +19,8 @@
 
           <?php
                 $codprenda=$_GET["idp"];
-                include("../conexion/conn.php");
-                $sql="SELECT  p.idPrenda, p.Descripcion, p.Precio, p.imagenprincipal, f.Imagen
+                include("../../config/conn.php");
+                $sql="SELECT  p.idPrenda, p.Descripcion,p.Nombre, p.Precio, p.imagenprincipal, f.Imagen
 						    FROM    multimarcasramiriqui.prenda p, multimarcasramiriqui.existencia   e, multimarcasramiriqui.foto f
 							  WHERE   p.IdPrenda=e.IdPrenda AND
 									      f.idPrenda=p.idPrenda AND

@@ -26,7 +26,7 @@ include("carrito.php");
 </head>
       <div class="container">
           <header class="row justify-content-center fixed-top bg-white ">
-            <img src="../img/logo.jpeg" alt="" class="row " height="60">
+            <img src="../../files/logo.jpeg" alt="" class="row " height="60">
               <nav class="col-12 navbar navbar-expand-sm navbar-light bg-light">
                   <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
                   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -35,31 +35,16 @@ include("carrito.php");
                       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                           
                           <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mujeres</a>
-                              <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                  <a class="dropdown-item" href="#">Blusas</a>
-                                  <a class="dropdown-item" href="#">Jeans</a>
-                                  <a class="dropdown-item" href="#">Chaquetas</a>
-                                  <a class="dropdown-item" href="#">Colletion</a>
-                              </div>
+                              <a class="nav-link dropdown-toggle" href="mujer.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mujeres</a>
+                            
                           </li>
                           <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hombre</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="#">Blusas</a>
-                                    <a class="dropdown-item" href="#">Jeans</a>
-                                    <a class="dropdown-item" href="#">Chaquetas</a>
-                                    <a class="dropdown-item" href="#">Colletion</a>
-                                </div>
+                                <a class="nav-link dropdown-toggle" href="hombre.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hombre</a>
+                              
                             </li>
                             <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Blusas</a>
-                                        <a class="dropdown-item" href="#">Jeans</a>
-                                        <a class="dropdown-item" href="#">Chaquetas</a>
-                                        <a class="dropdown-item" href="#">Colletion</a>
-                                    </div>
+                                   
                                 </li>
                       </ul>
                           <button class="btn btn-outline-info my-3 my-sm-0"><a  href="mostrarCarrito.php"><i class="fas fa-shopping-bag"></i>(
