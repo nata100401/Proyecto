@@ -1,6 +1,6 @@
 var tabla;
 
-$.post("../ajax/proveedor.php", {op:"selectDepartamento"}, function(r){
+$.post("../../ajax/proveedor2.php", {op:"selectDepartamento"}, function(r){
 	$("#IdDepartamento").html(r);
 	$("#IdDepartamento").selectpicker('refresh');
 
@@ -9,11 +9,11 @@ $.post("../ajax/proveedor.php", {op:"selectDepartamento"}, function(r){
 function listarciudades()
 {
 	dep=$("#IdDepartamento").val();
-	$.post("../ajax/proveedor.php", {op:"selectCiudad",depar:dep}, function(r){
+	$.post("../../ajax/proveedor2.php", {op:"selectCiudad",depar:dep}, function(r){
 		$("#IdCiudad").html(r);
 		$("#IdCiudad").selectpicker('refresh');
 	
-	});
+	}); 
 	
 } 
 
@@ -77,7 +77,7 @@ function listar()
 		        ],
 		"ajax":
 				{
-					url: '../ajax/proveedor.php?op=listar',
+					url: '../../ajax/proveedor.php?op=listar',
 					type : "get",
 					dataType : "json",
 					error: function(e){
@@ -97,9 +97,9 @@ function guardaryeditar(e)
 	var formData = new FormData($("#formulario")[0]);
 
 	$.ajax({
-		url: "../ajax/proveedor.php?op=guardaryeditar",
+		url: "../../ajax/proveedor.php?op=guardaryeditar",
 	    type: "POST",
-	    data: formData,
+	    data: formData, 
 	    contentType: false,
 	    processData: false,
 
@@ -116,7 +116,7 @@ function guardaryeditar(e)
 
 function mostrar(IdProveedor)
 {
-	$.post("../ajax/proveedor.php?op=mostrar",{IdProveedor : IdProveedor}, function(data, status)
+	$.post("../../ajax/proveedor.php?op=mostrar",{IdProveedor : IdProveedor}, function(data, status)
 	{
 		data = JSON.parse(data);		
 		mostrarform(true);

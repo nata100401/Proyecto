@@ -15,7 +15,7 @@
                   $codprenda=$_GET["idp"];
                   include("../../config/conn.php");
                   $sql="SELECT  p.idPrenda,p.Nombre, p.Descripcion, p.Precio,f.Imagen,p.imagenprincipal,e.Talla, cl.ImagenColor
-                  FROM    multimarcasramiriqui.prenda p, multimarcasramiriqui.existencia   e, multimarcasramiriqui.foto f, multimarcasramiriqui.color cl
+                  FROM    bdmultimarcas.prenda p, bdmultimarcas.existencia   e, bdmultimarcas.foto f, bdmultimarcas.color cl
                   WHERE   p.idPrenda=e.IdPrenda AND
                           e.IdExistencia=f.IdExistencia AND
                           p.Genero='Mujer' AND

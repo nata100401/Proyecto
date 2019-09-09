@@ -6,7 +6,7 @@
     $IdCiudad="";
     $Nombre="";
     $Telefonos="";
-    $NIT="";
+    $NIT=""; 
     $Email="";
     if(isset($_POST["IdProveedor"])){
         $IdProveedor=$_POST["IdProveedor"];
@@ -51,7 +51,7 @@
 		$data= Array();
 		while ($reg=$rspta->fetch_object()){
 			$data[]=array(
-			"0"=>'<button class="btn btn-warning" onclick="mostrar('.$reg->IdProveedor.')"><i class="fa fa-pencil"></i></button>',
+            "0"=>'<button class="btn btn-warning" onclick="mostrar('.$reg->IdProveedor.')"><i class="fa fa-pencil"></i></button>',
             "1"=>$reg->Nombre,
             "2"=>$reg->nomdepto,
             "3"=>$reg->nomciudad,
@@ -70,24 +70,5 @@
 
 
 	}
-	switch ($_POST["op"]){
-		case 'selectDepartamento':
-
-		$rspta = $Proveedor->selectDep();
-		while ($reg = $rspta->fetch_object())
-		{
-			echo '<option value="'. $reg->IdDepartamento .'">' . $reg->Nombre .'</option>';
-		}
-		break;
-
-		case 'selectCiudad':
-		$depa=$_POST["depar"];
-		$resconsulta=$Proveedor->selectCiu($depa);
-		while($datos=$resconsulta->fetch_object())
-		{
-		echo '<option value="'. $datos->IdCiudad .'">' . $datos->Nombre .'</option>';
-		}
-		break;
-	}
-
+	
 ?>

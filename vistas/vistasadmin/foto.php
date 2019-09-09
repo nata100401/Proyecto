@@ -10,7 +10,7 @@ require 'header.php';
               <div class="col-md-12">
                   <div class="box">
                     <div class="box-header with-border">
-                          <h1 class="box-title">Artículo<button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
+                          <h1 class="box-title">Foto<button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
                         <div class="box-tools pull-right">
                         </div>
                     </div>
@@ -21,6 +21,8 @@ require 'header.php';
                       <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
                           <thead>
                             <th>Opciones</th>
+                            <th>Prenda</th>
+                            <th>Categoria</th>
                             <th>Imagen</th>
                           </thead>
                           <tbody>                            
@@ -30,16 +32,27 @@ require 'header.php';
                     <div class="panel-body"  id="formularioregistros">
                         <form name="formulario" id="formulario" method="POST">
 
+
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="IdFoto" id="IdFoto">
+
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <input type="hidden" name="IdColor" id="IdColor">
+                            <label>Prenda:</label>
+                            <select id="IdPrenda" name="IdPrenda" class="form-control selectpicker" data-live-search="true" required></select>
                           </div>
+
+                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Categoría:</label>
+                            <select id="IdCategoria" name="IdCategoria" class="form-control selectpicker" data-live-search="true" required></select>
+                          </div>
+                          
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Imagen:</label>
-                            <input type="file" class="form-control" name="Imagen" id="Imagen">
+                            <input type="file" class="form-control" name="imagen" id="imagen">
                             <input type="hidden" name="imagenactual" id="imagenactual">
                             <img src="" width="150px" height="120px" id="imagenmuestra">
                           </div>
-                          </div>
+                          
                           <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
 
@@ -60,6 +73,6 @@ require 'footer.php';
 ?>
 <script type="text/javascript" src="../public/js/JsBarcode.all.min.js"></script>
 <script type="text/javascript" src="../public/js/jquery.PrintArea.js"></script>
-<script src="../Scripts/color.js"></script>
+<script src="../Scripts/foto.js"></script>
 
 

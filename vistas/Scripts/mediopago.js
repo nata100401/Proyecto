@@ -49,7 +49,7 @@
                 'pdf'
             ],
             "ajax":{
-                url:'../ajax/mediopago.php?op=listar',
+                url:'../../ajax/mediopago.php?op=listar',
                 type : "get",
                 dateType : "json",
                 error: function(e){
@@ -69,7 +69,7 @@
         var formData = new FormData($("#formulario")[0]);
     
         $.ajax({
-            url: "../ajax/mediopago.php?op=guardaryeditar",
+            url: "../../ajax/mediopago.php?op=guardaryeditar",
             type: "POST",
             data: formData,
             contentType: false,
@@ -87,7 +87,7 @@
     }
     
     function mostrar(IdMedioPago){
-        $.post("../ajax/mediopago.php?op=mostrar",{IdMedioPago :  IdMedioPago}, function(data, status)
+        $.post("../../ajax/mediopago.php?op=mostrar",{IdMedioPago :  IdMedioPago}, function(data, status)
         {
             data = JSON.parse(data);
             mostrarform(true);
@@ -105,7 +105,7 @@
             //si el resul es verdadero, desactivara la categoria de lo contrario no
             if (result) {
                 //"e" es el resultado que se recibe de URL: .../ajax/categoria.php?op=desactivar
-                $.post("../ajax/mediopago.php?op=desactivar",{IdMedioPago : IdMedioPago}, function(e){
+                $.post("../../ajax/mediopago.php?op=desactivar",{IdMedioPago : IdMedioPago}, function(e){
                     bootbox.alert(e);
                     //Recarga la tabla datatable
                     tabla.ajax.reload();
@@ -118,7 +118,7 @@
     {
         bootbox.confirm("¿Esta seguro que quiere activar este medio de pago?", function(result){
             if (result) {
-                $.post("../ajax/mediopago.php?op=activar",{IdMedioPago : IdMedioPago}, function(e){
+                $.post("../../ajax/mediopago.php?op=activar",{IdMedioPago : IdMedioPago}, function(e){
                     bootbox.alert(e);
                     tabla.ajax.reload();
                 });

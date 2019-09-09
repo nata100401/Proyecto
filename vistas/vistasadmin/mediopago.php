@@ -49,4 +49,4 @@ require 'header.php';
 <?php
 require 'footer.php';
 ?>
-<script src="Scripts/mediopago.js"></script>
+<script src="../Scripts/mediopago.js"></script>

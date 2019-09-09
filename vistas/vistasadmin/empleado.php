@@ -75,4 +75,4 @@ require 'header.php';
 <?php
 require 'footer.php';
 ?>
-<script src="Scripts/empleado.js"></script>
+<script src="../Scripts/empleado.js"></script>

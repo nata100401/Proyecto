@@ -46,4 +46,4 @@ require 'header.php';
 <?php
 require 'footer.php';
 ?>
-<script src="Scripts/categoria.js"></script>
+<script src="../Scripts/categoria.js"></script>

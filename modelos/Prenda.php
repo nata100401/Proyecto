@@ -35,7 +35,7 @@
 	public function mostrar($IdPrenda)
 	{
 		$sql="SELECT * FROM prenda WHERE IdPrenda='$IdPrenda'";
-		return consultarUnaFila($sql);
+		return consultarUnaFila($sql); 
 	}
 
 	public function listar()

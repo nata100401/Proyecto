@@ -74,7 +74,7 @@ require 'header.php';
                         </form>  
                     </div>
                   </div>
-              </div>>
+              </div>
           </div>
       </section>
 
@@ -82,4 +82,4 @@ require 'header.php';
 <?php
 require 'footer.php';
 ?>
-<script src="Scripts/cliente.js"></script>
+<script src="../Scripts/cliente.js"></script>

@@ -10,13 +10,13 @@ function init()
 		guardaryeditar(e);	
 	})
 
-	$.post("../ajax/prenda.php?op=selectCategoria", function(r){
+	$.post("../../ajax/prenda.php?op=selectCategoria", function(r){
 	            $("#IdCategoria").html(r);
 	            $("#IdCategoria").selectpicker('refresh');
 
 	});
 
-    $.post("../ajax/prenda.php?op=selectProveedor", function(r){
+    $.post("../../ajax/prenda.php?op=selectProveedor", function(r){
 				$("#IdProveedor").html(r);
 				$("#IdProveedor").selectpicker('refresh');
 
@@ -75,7 +75,7 @@ function listar()
 		        ],
 		"ajax":
 				{
-					url: '../ajax/prenda.php?op=listar',
+					url: '../../ajax/prenda.php?op=listar',
 					type : "get",
 					dataType : "json",						
 					error: function(e){
@@ -95,7 +95,7 @@ function guardaryeditar(e)
 	var formData = new FormData($("#formulario")[0]);
 
 	$.ajax({
-		url: "../ajax/prenda.php?op=guardaryeditar",
+		url: "../../ajax/prenda.php?op=guardaryeditar",
 	    type: "POST",
 	    data: formData,
 	    contentType: false,
@@ -114,7 +114,7 @@ function guardaryeditar(e)
 
 function mostrar(IdPrenda)
 { 
-	$.post("../ajax/prenda.php?op=mostrar",{IdPrenda : IdPrenda}, function(data, status)
+	$.post("../../ajax/prenda.php?op=mostrar",{IdPrenda : IdPrenda}, function(data, status)
 	{
 		data = JSON.parse(data);		
 		mostrarform(true);
@@ -137,7 +137,7 @@ function desactivar(IdPrenda)
 	bootbox.confirm("¿Está Seguro de desactivar la prenda?", function(result){
 		if(result)
         {
-        	$.post("../ajax/prenda.php?op=desactivar", {IdPrenda : IdPrenda}, function(e){
+        	$.post("../../ajax/prenda.php?op=desactivar", {IdPrenda : IdPrenda}, function(e){
         		bootbox.alert(e);
 	            tabla.ajax.reload();
         	});	
@@ -150,7 +150,7 @@ function activar(IdPrenda)
 	bootbox.confirm("¿Está Seguro de activar la prenda?", function(result){
 		if(result)
         {
-        	$.post("../ajax/prenda.php?op=activar", {IdPrenda : IdPrenda}, function(e){
+        	$.post("../../ajax/prenda.php?op=activar", {IdPrenda : IdPrenda}, function(e){
         		bootbox.alert(e);
 	            tabla.ajax.reload();
         	});	

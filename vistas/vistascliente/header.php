@@ -24,6 +24,7 @@ include("carrito.php");
     <link rel="stylesheet" href="../../public/css/cart_responsive.css">
    
 </head>
+<body>
       <div class="container">
           <header class="row justify-content-center fixed-top bg-white ">
             <img src="../../files/logo.jpeg" alt="" class="row " height="60">
@@ -63,6 +64,15 @@ include("carrito.php");
                   </div>
               </nav>
           </header>
-        
+     </body>
+     <script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>   
       </div>
       
