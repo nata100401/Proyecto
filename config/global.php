@@ -2,6 +2,6 @@
 define("DB_HOST","localhost");
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "");
-define("DB_NAME", "multimarcasramiriqui");
+define("DB_NAME", "bdmultimarcas");
 define("DB_ENCODE","utf8");
 ?>
