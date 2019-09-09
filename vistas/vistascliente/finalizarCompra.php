@@ -20,7 +20,7 @@
                   
                        <div class="form-group" >
                          <label for="">Correo</label>
-                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar su dirección de correo" Required>
+                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar su dirección de correo" >
                        
                             <div class="row">
                                 <div class="col-6">
@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="col-6">
                                 <label for="">Apellido</label>
-                                <input type="email" class="form-control" name="apellido" id="apellido" aria-describedby="emailHelpId" placeholder="Apellidos" >
+                                <input type="text" class="form-control" name="apellido" id="apellido" aria-describedby="emailHelpId" placeholder="Apellidos" >
                                 </div>
                             </div>
                             <div class="row">
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="col-6">
                                 <label for="">Celular</label>
-                                <input type="email" class="form-control" name="celular" id="celular"  placeholder="Celular" Required>
+                                <input type="text" class="form-control" name="celular" id="celular"  placeholder="Celular" Required>
                                 </div>
                             </div>
                             <div class="row mt-3">

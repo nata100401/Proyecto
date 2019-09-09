@@ -29,34 +29,34 @@ include("carrito.php");
           <header class="row justify-content-center fixed-top bg-white ">
             <img src="../../files/logo.jpeg" alt="" class="row " height="60">
               <nav class="col-12 navbar navbar-expand-sm navbar-light bg-light">
-                  <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+                  <a class="navbar-brand"  href="index.php"><i style="padding:3%; font-size:30px;" class="fas fa-home"></i></a>
                   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                       aria-expanded="false" aria-label="Toggle navigation"></button>
                   <div class="collapse navbar-collapse" id="collapsibleNavId">
                       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                           
                           <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="mujer.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mujeres</a>
+                              <a style="font-size:20px;" class="nav-link dropdown-toggle" href="mujer.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mujeres</a>
                             
                           </li>
                           <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="hombre.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hombre</a>
+                                <a  style="font-size:20px;" class="nav-link dropdown-toggle" href="hombre.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hombre</a>
                               
                             </li>
                             <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
+                                    <a  style="font-size:20px;" class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
                                    
                                 </li>
                       </ul>
-                          <button class="btn btn-outline-info my-3 my-sm-0"><a  href="mostrarCarrito.php"><i class="fas fa-shopping-bag" style="padding:5px; font-sixe:12px;"></i>(
+                          <button class="btn btn-outline-info my-3 my-sm-0"><a   style="font-size:12px;" href="mostrarCarrito.php"><i class="fas fa-shopping-bag" style="padding:5px; font-sixe:12px;"></i>(
                                <?php
                                  echo(empty($_SESSION['carrito']))?0:count($_SESSION['carrito']);
                                 ?> )
                           </a></button>
-                          <button class="btn btn-outline-info my-3 my-sm-0" ><a href="mapa.php"><i class="fas fa-map-marker-alt" style="padding:5px; font-sixe:12px;"></i></a></button>
-                      <form class="form-inline my-2 my-lg-0">
+                          <button class="btn btn-outline-info my-3 my-sm-0" ><a  style="font-size:12px;" href="mapa.php"><i class="fas fa-map-marker-alt" style="padding:5px; font-sixe:12px;"></i></a></button>
+                      <form action="../vistasadmin/categoria.php" class="form-inline my-2 my-lg-0">
                      
-                          <button class="btn btn-outline-info my-3 my-sm-0" type="submit" href="login.php"><i class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
+                          <button class="btn btn-outline-info my-3 my-sm-0" type="submit" href="login.php"><i  style="font-size:22px;"class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
                          
                           </i></button>
                          
