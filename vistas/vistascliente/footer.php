@@ -1,8 +1,7 @@
-                           <div class="row justify-content-end  mr-auto"style="margin-top:200px;">
-                                <div class="col-2"><img class="img-fluid" height="380px"  src="../../public/img/logo-gob.png" alt=""></div>
-                                <div class="col-2"><img class="img-fluid" height="200px"  src="../../public/img/vivela.jpg" alt=""></div>
-                                <div class="col-2 m-0"><img class="" height="70px"  src="../../public/img/sena.jpg" alt=""></div>
-                            </div>
+<strong>Colaboración de:<br><br><br>
+        <li style="list-style:none; margin-left:5%; " class="last"><a href="http://senacentrogestiontunja.blogspot.com/" class="new_win"><span><img style=" width:100px;" src="../../public/img/sena.png"></span></a></li>
+        <li style="list-style:none; margin-left:20%; margin-top:-7%;" class="last"><a href="http://www.boyaca.gov.co/" class="new_win"><span><img  style=" width:150px;"  src="../../public/img/gobernacion.png"></span></a></li>
+        <li style="list-style:none; margin-left:38%; margin-top:-12%;" class="last"><a href="http://www.boyaca.gov.co/prensa-publicaciones/noticias/8944-vivelab-tunja,-un-laboratorio-gratuito-para-los-boyacenses-innovadores" class="new_win"><span><img  style=" width:200px;" src="../../public/img/vivelab.png"></span></a></li>
 <footer  >
             <div class="container"> 
                   <ul>
