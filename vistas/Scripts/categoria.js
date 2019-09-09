@@ -54,7 +54,7 @@ function listar()
         ],
     "ajax":
     {
-        url: '../ajax/categoria.php?op=listar',
+        url: '../../ajax/categoria.php?op=listar',
         type: "get",
         dataType: "json",
         error: function(e){

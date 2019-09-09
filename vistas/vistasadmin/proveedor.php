@@ -59,16 +59,16 @@ require 'header.php';
 
                             <button class="btn btn-danger" onclick="cancelarform()" type="button"><i class="fa fa-arrow-circle-left"></i> Cancelar</button>
                           </div>
-                        </form>
+                        </form> 
                     </div>
                   </div>
               </div>
           </div>
         </section>
-
+ 
 <?php
 require 'footer.php';
 ?>
 <script type="text/javascript" src="../public/js/JsBarcode.all.min.js"></script>
 <script type="text/javascript" src="../public/js/jquery.PrintArea.js"></script>
-<script src="Scripts/lugares.js"></script>
+<script src="../Scripts/lugares.js"></script>

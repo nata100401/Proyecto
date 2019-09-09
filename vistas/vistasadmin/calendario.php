@@ -44,15 +44,20 @@ $SEMANAABREVIADA[4] = 'Jue';
 $SEMANAABREVIADA[5] = 'Vie';
 $SEMANAABREVIADA[6] = 'Sáb';
 
-////////////////////////////////////
-if($tipo_semana == 0){
+if($tipo_semana == 0)
+{
 $ARRDIASSEMANA = $SEMANACOMPLETA;
-}elseif($tipo_semana == 1){
+}
+elseif($tipo_semana == 1)
+{
 $ARRDIASSEMANA = $SEMANAABREVIADA;
 }
-if($tipo_mes == 0){
+if($tipo_mes == 0)
+{
 $ARRMES = $MESCOMPLETO;
-}elseif($tipo_mes == 1){
+}
+elseif($tipo_mes == 1)
+{
 $ARRMES = $MESABREVIADO;
 }
 
@@ -68,7 +73,8 @@ $TerminaMesCalOffset = 6 - $DiaSemanaTerminaMes;
 $TotalDeCeldas = $TotalDiasMes + $DiaSemanaEmpiezaMes + $TerminaMesCalOffset;
 
 
-if($mes == 1){
+if($mes == 1)
+{
 $MesAnterior = 12;
 $MesSiguiente = $mes + 1;
 $AnoAnterior = $ano - 1;
@@ -102,7 +108,8 @@ print " </table>";
 print " </td>";
 print "</tr>";
 print "<tr>";
-foreach($ARRDIASSEMANA AS $key){
+foreach($ARRDIASSEMANA AS $key)
+{
 print "<td bgcolor=#ccccff><b>$key</b></td>";
 }
 print "</tr>";
@@ -112,16 +119,25 @@ if(!$b) $b = 0;
 if($b == 7) $b = 0;
 if($b == 0) print '<tr>';
 if(!$c) $c = 1;
-if($a > $EmpiezaMesCalOffset AND $c <= $TotalDiasMes){
-if($c == date(d) && $mes == date(m) && $ano == date(Y)){
+
+if($a > $EmpiezaMesCalOffset AND $c <= $TotalDiasMes)
+{
+if($c == date(d) && $mes == date(m) && $ano == date(Y))
+{
 print "<td bgcolor=\"#ffcc99\">$c<br></td>";
-}elseif($b == 0 OR $b == 6){
+}
+elseif($b == 0 OR $b == 6)
+{
 print "<td bgcolor=#99cccc>$c</td>";
-}else{
+}
+else
+{
 print "<td bgcolor=\"#EEEEEE\">$c</td>";
 }
 $c++;
-}else{
+}
+else
+{
 print "<td> </td>";
 }
 if($b == 6) print '</tr>';
@@ -129,4 +145,6 @@ $b++;
 }
 print "<tr><td align=center colspan=10></a></td></tr>";
 print "</table>";
+
+
 ?>

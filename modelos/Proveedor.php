@@ -17,7 +17,7 @@
 	{
 		$sql="UPDATE proveedor SET IdDepartamento='$IdDepartamento',IdCiudad='$IdCiudad',Nombre='$Nombre',Telefonos='$Telefonos',NIT='$NIT',Email='$Email' WHERE IdProveedor='$IdProveedor'";
 		return ejecutarConsulta($sql);
-	}
+	} 
 
 	public function mostrar($IdProveedor)
     {
@@ -27,7 +27,7 @@
     }
 
     public function listar()
-	{
+	{ 
 		$sql="SELECT d.Nombre as nomdepto,c.Nombre as nomciudad, p.Nombre,p.Telefonos,p.NIT,p.Email
         FROM departamento d, proveedor p, ciudad c
         WHERE d.IdDepartamento=p.IdDepartamento AND c.IdCiudad=p.IdCiudad";

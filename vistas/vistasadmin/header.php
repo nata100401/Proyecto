@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Multimarcas</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../public/css/font-awesome.css">
-    <link rel="stylesheet" href="../public/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="../public/css/_all-skins.min.css">
-    <link rel="apple-touch-icon" href="../public/img/apple-touch-icon.png">
-    <link rel="shortcut icon" href="../public/img/logo.jpeg">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/font-awesome.css">
+    <link rel="stylesheet" href="../../public/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../public/css/_all-skins.min.css">
+    <link rel="apple-touch-icon" href="../../public/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../public/img/logo.jpeg">
 
-  <link rel="stylesheet" href="../public/datatables/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="../public/datatables/buttons.dataTables.min.css">
-  <link rel="stylesheet" href="../public/datatables/responsive.dataTables.min.css">
-  <link rel="stylesheet" href="../public/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/c5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="../../public/datatables/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="../../public/datatables/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="../../public/datatables/responsive.dataTables.min.css">
+  <link rel="stylesheet" href="../../public/css/bootstrap-select.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/c5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap-select.min.css">
 
   </head>
   <body class="hold-transition skin-blue-light sidebar-mini">
@@ -41,7 +42,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li class="user-header">
-                    <img src="../public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="../../public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     
                   </li>
                   
@@ -170,6 +171,15 @@
             </li>  
 
             </ul>
-
+</body>
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
         </section>
       </aside>

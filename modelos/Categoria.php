@@ -14,7 +14,7 @@ Class Categoria
     }
 
     public function editar($IdCategoria, $Nombre)
-    {
+    { 
         $sql="UPDATE categoria
         SET Nombre='$Nombre'
         WHERE IdCategoria='$IdCategoria'";

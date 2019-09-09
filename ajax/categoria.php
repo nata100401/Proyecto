@@ -1,4 +1,4 @@
-<?php
+<?php 
 include("../modelos/Categoria.php");
 $Categoria=new Categoria();
 $IdCategoria="";
@@ -30,7 +30,6 @@ switch ($_GET["op"]){
 
     case 'listar':
         $rspta=$Categoria->listar();
-
         $data = Array();
 
         while ($reg=$rspta->fetch_object()) {

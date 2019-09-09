@@ -60,7 +60,7 @@ function listar()
         ],
     "ajax":
     {
-        url: '../ajax/cliente.php?op=listar',
+        url: '../../ajax/cliente.php?op=listar',
         type: "get",
         dataType: "json",
         error: function(e){
@@ -80,7 +80,7 @@ function guardaryeditar(e)
     var formData = new FormData($("#formulario")[0]);
 
     $.ajax({
-        url:"../ajax/cliente.php?op=guardaryeditar",
+        url:"../../ajax/cliente.php?op=guardaryeditar",
         type: "POST",
         data: formData,
         contentType:false,
@@ -99,7 +99,7 @@ function guardaryeditar(e)
 
 function mostrar(IdCliente)
 {
-    $.post("../ajax/cliente.php?op=mostrar",{IdCliente : IdCliente}, function(data, status)
+    $.post("../../ajax/cliente.php?op=mostrar",{IdCliente : IdCliente}, function(data, status)
     {
         data = JSON.parse(data);
 

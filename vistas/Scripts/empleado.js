@@ -54,7 +54,7 @@
                 'pdf'
             ],
             "ajax":{
-                url:'../ajax/empleado.php?op=listar',
+                url:'../../ajax/empleado.php?op=listar',
                 type : "get",
                 dateType : "json",
                 error: function(e){
@@ -74,7 +74,7 @@
         var formData = new FormData($("#formulario")[0]);
     
         $.ajax({
-            url: "../ajax/empleado.php?op=guardaryeditar",
+            url: "../../ajax/empleado.php?op=guardaryeditar",
             type: "POST",
             data: formData,
             contentType: false,
@@ -92,7 +92,7 @@
     }
     
     function mostrar(IdEmpleado){
-        $.post("../ajax/empleado.php?op=mostrar",{IdEmpleado :  IdEmpleado}, function(data, status)
+        $.post("../../ajax/empleado.php?op=mostrar",{IdEmpleado :  IdEmpleado}, function(data, status)
         {
             data = JSON.parse(data);
             mostrarform(true);
@@ -114,7 +114,7 @@
             //si el resul es verdadero, desactivara la categoria de lo contrario no
             if (result) {
                 //"e" es el resultado que se recibe de URL: .../ajax/categoria.php?op=desactivar
-                $.post("../ajax/empleado.php?op=desactivar",{IdEmpleado : IdEmpleado}, function(e){
+                $.post("../../ajax/empleado.php?op=desactivar",{IdEmpleado : IdEmpleado}, function(e){
                     bootbox.alert(e);
                     //Recarga la tabla datatable
                     tabla.ajax.reload();
@@ -127,7 +127,7 @@
     {
         bootbox.confirm("¿Esta seguro que quiere activar a este empleado?", function(result){
             if (result) {
-                $.post("../ajax/empleado.php?op=activar",{IdEmpleado : IdEmpleado}, function(e){
+                $.post("../../ajax/empleado.php?op=activar",{IdEmpleado : IdEmpleado}, function(e){
                     bootbox.alert(e);
                     tabla.ajax.reload();
                 });

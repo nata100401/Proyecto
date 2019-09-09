@@ -41,7 +41,6 @@
     case 'guardaryeditar':
 		if (empty($IdPrenda)){
 			$rspta=$Prenda->insertar($IdCategoria,$IdProveedor, $Genero, $Descripcion, $TiempoGarantiaMes, $ReferenciaPrenda, $Precio, $Descuento);
-			//$rspta=$Prenda->insertar('2','1', 'Femenino', 'Ninguna', '12', '12', '87323', '0');
 			echo $rspta ? "Prenda registrada" : "Intentelo Nuevamente";
 		}
 		else {

@@ -7,7 +7,7 @@ require 'header.php';
               <div class="col-md-12">
                   <div class="box">
                     <div class="box-header with-border">
-                          <h1 class="box-title">Prenda<button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
+                          <h1 class="box-title">Entradas<button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
                         <div class="box-tools pull-right">
                         </div>
                     </div>
@@ -15,15 +15,12 @@ require 'header.php';
                       <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
                           <thead>
                             <th>Opciones</th>
-                            <th>Categoria</th>
+                            <th>Prenda</th>
                             <th>Proveedor</th>
-                            <th>Genero</th>
-                            <th>Descripcion</th>
-                            <th>Garantia</th>
-                            <th>Referencia</th>
-                            <th>Precio</th>
-                            <th>Descuento</th>
-                            <th>Estado</th>
+                            <th>Color</th>
+                            <th>Cantidad</th>
+                            <th>Fecha</th>
+                            <th>Talla</th>
                           </thead>
                           <tbody>                            
                           </tbody>
@@ -33,37 +30,29 @@ require 'header.php';
                         <form name="formulario" id="formulario" method="POST">
 
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="IdPrenda" id="IdPrenda">
-                            <label>Categoría:</label>
-                            <select id="IdCategoria" name="IdCategoria" class="form-control selectpicker" data-live-search="true"></select>
+                          <input type="text" name="IdEntrada" id="IdEntrada">
+                            <label>Prenda:</label>
+                            <select id="IdPrenda" name="IdPrenda" class="form-control selectpicker" data-live-search="true"></select>
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Proveedor:</label>
                             <select id="IdProveedor" name="IdProveedor" class="form-control selectpicker" data-live-search="true"></select>
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Genero:</label>
-                            <input type="text" class="form-control" name="Genero" id="Genero" maxlength="256" placeholder="Genero" required>
+                            <label>Color:</label>
+                            <select id="IdColor" name="IdColor" class="form-control selectpicker" data-live-search="true"></select>
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Descripción:</label>
-                            <input type="text" class="form-control" name="Descripcion" id="Descripcion" maxlength="256" placeholder="Descripcion" required>
+                            <label>Cantidad:</label>
+                            <input type="text" class="form-control" name="Cantidad" id="Cantidad" maxlength="256" placeholder="Cantidad" required>
                           </div>
+                         <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label>Fecha:</label>
+                            <input type="date" class="form-control" name="Fecha" id="Fecha" placeholder="Fecha" required>
+                            </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Tiempo de Garantia:</label>
-                            <input type="text" class="form-control" name="TiempoGarantiaMes" id="TiempoGarantiaMes" maxlength="256" placeholder="Tiempo de Garantia" required>
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Referencia de prenda:</label>
-                            <input type="text" class="form-control" name="ReferenciaPrenda" id="ReferenciaPrenda" maxlength="256" placeholder="Referencia de la Prenda" required>
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Precio:</label>
-                            <input type="text" class="form-control" name="Precio" id="Precio" maxlength="256" placeholder="Precio" required>
-                          </div>
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Descuento:</label>
-                            <input type="text" class="form-control" name="Desc" id="Desc" maxlength="256" placeholder="Descuento de la Prenda" required>
+                            <label>Talla:</label>
+                            <input type="text" class="form-control" name="Talla" id="Talla" maxlength="256" placeholder="Talla" required>
                           </div>
 
                           <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -83,6 +72,6 @@ require 'footer.php';
 ?>
 <script type="text/javascript" src="../public/js/JsBarcode.all.min.js"></script>
 <script type="text/javascript" src="../public/js/jquery.PrintArea.js"></script>
-<script src="../Scripts/prenda.js"></script>
+<script src="../Scripts/entrada.js"></script>
 
 
