@@ -47,15 +47,18 @@ include("carrito.php");
                                    
                                 </li>
                       </ul>
-                          <button class="btn btn-outline-info my-3 my-sm-0"><a  href="mostrarCarrito.php"><i class="fas fa-shopping-bag"></i>(
+                          <button class="btn btn-outline-info my-3 my-sm-0"><a  href="mostrarCarrito.php"><i class="fas fa-shopping-bag" style="padding:5px; font-sixe:12px;"></i>(
                                <?php
                                  echo(empty($_SESSION['carrito']))?0:count($_SESSION['carrito']);
                                 ?> )
                           </a></button>
+                          <button class="btn btn-outline-info my-3 my-sm-0" ><a href="mapa.php"><i class="fas fa-map-marker-alt" style="padding:5px; font-sixe:12px;"></i></a></button>
                       <form class="form-inline my-2 my-lg-0">
-                          <button class="btn btn-outline-info my-3 my-sm-0" type="submit" href="login.php"><i class="fas fa-user-circle">
+                     
+                          <button class="btn btn-outline-info my-3 my-sm-0" type="submit" href="login.php"><i class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
                          
                           </i></button>
+                         
                       </form>
                   </div>
               </nav>
