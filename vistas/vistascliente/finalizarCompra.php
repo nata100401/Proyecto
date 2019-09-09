@@ -20,34 +20,34 @@
                   
                        <div class="form-group" >
                          <label for="">Correo</label>
-                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar su dirección de correo">
+                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar su dirección de correo" Required>
                        
                             <div class="row">
                                 <div class="col-6">
                               <form action="pagar.php" method="post">
                               
                                 <label for="">Nombre</label>
-                                <input type="text" class="form-control " name="nombre" id="nombre"  placeholder="Nombre"> 
+                                <input type="text" class="form-control " name="nombre" id="nombre"  placeholder="Nombre" Required> 
                                 </div>
                                 <div class="col-6">
                                 <label for="">Apellido</label>
-                                <input type="email" class="form-control" name="apellido" id="apellido" aria-describedby="emailHelpId" placeholder="Apellidos">
+                                <input type="email" class="form-control" name="apellido" id="apellido" aria-describedby="emailHelpId" placeholder="Apellidos" >
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-6">
                                 <label for="">Cedula de Ciudadanía</label>
-                                <input type="text" class="form-control " name="cedula" id="cedula"  placeholder="Cedula de Ciudadanía"> 
+                                <input type="text" class="form-control " name="cedula" id="cedula"  placeholder="Cedula de Ciudadanía" Required> 
                                 </div>
                                 <div class="col-6">
                                 <label for="">Celular</label>
-                                <input type="email" class="form-control" name="celular" id="celular"  placeholder="Celular">
+                                <input type="email" class="form-control" name="celular" id="celular"  placeholder="Celular" Required>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-8">
                                 <label for="">Dirección</label>
-                                <input type="text" class="form-control " name="direccion" id="direccion"  placeholder="Dirección"> 
+                                <input type="text" class="form-control " name="direccion" id="direccion"  placeholder="Dirección" Required> 
                                 </div>
                                 <div class="col-4 ">
                                     <h4>Medio de pago</h4>

@@ -113,6 +113,8 @@
               <ul class="treeview-menu">
                 <li><a href="prenda.php"><i class="fa fa-circle-o"></i> Prendas</a></li>
                 <li><a href="categoria.php"><i class="fa fa-circle-o"></i> Categorías</a></li>
+                <li><a href="color.php"><i class="fa fa-circle-o"></i> Color</a></li>
+                <li><a href="foto.php"><i class="fa fa-circle-o"></i> Fotos de prendas</a></li>
               </ul>
             </li>
             
@@ -125,6 +127,7 @@
               <ul class="treeview-menu">
                 <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-circle-o"></i> Detalle de Factura</a></li>
                 <li><a href="proveedor.php"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+                <li><a href="prenda.php"><i class="fa fa-circle-o"></i> Prenda</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -137,6 +140,8 @@
               <ul class="treeview-menu">
                 <li><a href="empleado.php"><i class="fa fa-circle-o"></i> Empleados</a></li>
                 <li><a href="cliente.php"><i class="fa fa-circle-o"></i> Clientes</a></li>
+                <li><a href="entrada.php"><i class="fa fa-circle-o"></i> Entradas</a></li>
+                <li><a href="existencia.php"><i class="fa fa-circle-o"></i> Existencias</a></li>
                 
               </ul>
             </li>
