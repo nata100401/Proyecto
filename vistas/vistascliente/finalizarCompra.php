@@ -60,7 +60,7 @@
                                      <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
                                      Acepto Terminos y condiciones
                                    </label>
-                                   <button type="button" name="btnAction" value="proceder" id="continuar" class="btn btn-info btn-lg btn-block mt-3">Finalizar Compra</button>
+                                   <button type="submit" name="btnAction" value="proceder" id="continuar" class="btn btn-info btn-lg btn-block mt-3">Finalizar Compra</button>
                            </form>     
                          </div> 
                      </div>
