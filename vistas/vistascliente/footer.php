@@ -1,3 +1,8 @@
+                           <div class="row justify-content-end  mr-auto"style="margin-top:200px;">
+                                <div class="col-2"><img class="img-fluid" height="380px"  src="../../public/img/logo-gob.png" alt=""></div>
+                                <div class="col-2"><img class="img-fluid" height="200px"  src="../../public/img/vivela.jpg" alt=""></div>
+                                <div class="col-2 m-0"><img class="" height="70px"  src="../../public/img/sena.jpg" alt=""></div>
+                            </div>
 <footer  >
             <div class="container"> 
                   <ul>
@@ -31,7 +36,7 @@
                                      <a href="google">Cambios y Devoluciones</a>
                                  </div>
                      </div>
-                   
+                 
                          
                     
            </div>

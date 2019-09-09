@@ -14,7 +14,8 @@
             <?php 
               foreach($_SESSION['carrito'] as $indice=>$prenda){ ?>
              <tr>
-                <td><img height="50" width="50" src="../images/mujer/camisas/<?php echo $fila["imagenprincipal"]?>" alt=""><?php echo $prenda['descripcion']?></td>
+                <td ><img height="50" width="50" src="../../files/todo/<?php echo $prenda['imagen']?>" alt="">
+                <p><?php echo $prenda['nombre']?></p></td>
                 <td><?php echo $prenda['cantidad']?></td>
                 <td>$<?php echo number_format($prenda['precio']*$prenda['cantidad'],2);?></td>
                 <td> 

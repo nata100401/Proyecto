@@ -12,6 +12,23 @@
                else{
                   $mensaje.="ups.. id incorrecto".$id;
                }
+                    if(is_string($_POST['imagenprincipal'])){
+                        $imagen=$_POST['imagenprincipal'];
+                        $mensaje.="ok nombre correcto".$imagen;
+                    }
+                    else{
+                        $mensaje.="ups.. imagen incorrecto".$imagen;
+                        break;
+                    }
+                    if(is_string($_POST['Nombre'])){
+                        $nombre=$_POST['Nombre'];
+                        $mensaje.="ok nombre correcto".$nombre;
+                    }
+                    else{
+                        $mensaje.="ups.. nombre incorrecto".$descripcion;
+                        break;
+                    }
+
                     if(is_string($_POST['Descripcion'])){
                         $descripcion=$_POST['Descripcion'];
                         $mensaje.="ok descripcion correcto".$descripcion;
@@ -20,6 +37,7 @@
                         $mensaje.="ups.. descripcion incorrecto".$descripcion;
                         break;
                     }
+
                     if(is_numeric($_POST['Precio'])){
                         $precio=$_POST['Precio'];
                         $mensaje.="ok precio correcto".$precio;
@@ -41,7 +59,8 @@
               if(!isset($_SESSION['carrito'])){
                   $prenda=array(
                     'id'=> $id,
-                    'imagenprincipal'=>$imagen,
+                    'imagen'=>$imagen,
+                    'nombre'=>$nombre,
                     'descripcion'=>$descripcion,
                     'precio'=>$precio,
                     'cantidad'=>$cantidad
@@ -59,7 +78,8 @@
                   $numPrendas=count($_SESSION['carrito']);
                   $prenda=array(
                     'id'=> $id,
-                    'imagenprincipal'=>$imagen,
+                    'imagen'=>$imagen,
+                    'nombre'=>$nombre,
                     'descripcion'=>$descripcion,
                     'precio'=>$precio,
                     'cantidad'=>$cantidad

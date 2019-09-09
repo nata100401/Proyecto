@@ -13,7 +13,7 @@
                 <div class="container">
                 <div class="row ">
                        <div class="col-12 " style=" margin-bottom: 35%;">
-                       <div class="home_background parallax-window" > <img src="../img/home_slider_1.jpg" alt="" width="100%" height="400px" > 
+                       <div class="home_background parallax-window" > <img src="../../files/carousel/home_slider_1.jpg" alt="" width="100%" height="400px" > 
                      </div>
                   </div>
                 </div>
@@ -22,7 +22,7 @@
       <div class="container">
             <div class="row mt-2 pr-auto">
                 <?php
-                      include("../conexion/conn.php");
+                      include("../../config/conn.php");
                       $sql="SELECT  c.Nombre
                       FROM    multimarcasramiriqui.Categoria c";
                       $resultado=$base->prepare($sql);
@@ -43,8 +43,8 @@
                     <div class="col">
                       <div class="card-group mt-1">
                       <?php
-                        include("../conexion/conn.php");
-                        $sql="SELECT  p.idPrenda, p.Descripcion, p.Precio, p.imagenprincipal
+                        include("../../config/conn.php");
+                        $sql="SELECT  p.idPrenda, p.Nombre,p.Descripcion, p.Precio, p.imagenprincipal
                               FROM    multimarcasramiriqui.prenda p, multimarcasramiriqui.existencia e
                               WHERE   p.IdPrenda=e.IdPrenda AND
                                       p.Genero='Mujer' 
@@ -66,24 +66,27 @@
                                     </button>
                                 </a>
 
-                                 <img class="card-i eñmg-top " height="400" width="400" src="../images/mujer/camisas/<?php echo $fila["imagenprincipal"]?>" alt="">
+                                 <img class="card-i " height="500"  src="../../files/mujer/inicio/<?php echo $fila["imagenprincipal"]?>" alt="">
                                 <div class="card-body w-100">
-                                    <div style="font-size:15px" class="mr-5 product_name align-content-center"><a href="product.html"><?php echo $fila['Descripcion']?></a>
+                                    <div style="font-size:15px" class="mr-5 product_name align-content-center"><a href="product.html"><?php echo $fila['Nombre']?></a>
 
                                       <form method="post" action="">
                                          <input type="hidden" name="idPrenda" id="idPrenda" value="<?php echo $fila["idPrenda"]?>">
+                                         <input type="hidden" name="imagenprincipal" id="imagenprincipal" value="<?php echo $fila["imagenprincipal"]?>">
+                                         <input type="hidden" name="Nombre" id="Nombre" value="<?php echo $fila["Nombre"]?>">
                                          <input type="hidden" name="Descripcion" id="Descripcion" value="<?php echo $fila["Descripcion"]?>">
                                          <input type="hidden" name="Precio" id="Precio" value="<?php echo $fila["Precio"]?>">
                                          <input type="hidden" name="cantidad" id="cantidad" value="1">
-                                        
+                                         <div class="row justify-content-end">
                                         <button type="submit" class="btn btn-info ml-5 py-1 " style="font-size:15px"name="btnAction" value="Agregar">
                                         <i class="fas fa-plus-square"></i>
                                         </button>
+                                         </div>
                                       </form>
                                 </div>
                                     
                                     <div class="row product_info  ">
-                                    <div class="col-6  "><?php echo $fila["Precio"]?></div>
+                                    <div class="col-6  ">$<?php echo $fila["Precio"]?></div>
                                     </div>
                                   
                                 </div>

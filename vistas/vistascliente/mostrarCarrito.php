@@ -19,7 +19,7 @@
             <?php 
               foreach($_SESSION['carrito'] as $indice=>$prenda){ ?>
              <tr>
-                <td><img height="50" width="50" src="../images/mujer/camisas/<?php echo $prenda['imagen']?>" alt=""><?php echo $prenda['descripcion']?></td>
+                <td><img height="50" width="50" class="mr-3" src="../../files/todo/<?php echo $prenda['imagen']?>" alt=""><?php echo $prenda['nombre']?></td>
                 <td><?php echo $prenda['cantidad']?></td>
                 <td>$<?php echo number_format($prenda['precio']*$prenda['cantidad'],2);?></td>
                 <td> 
@@ -38,32 +38,25 @@
                 <td><h3>$<?php echo number_format($total);?></h3></td>   
             </tr>
            
-           
             </tbody>
         </table>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col  col-lg-6"
-     style="background:#DCDCDC; padding:15px"> 
-            <div class="form-group">
-              <h3 class="row justify-content-center">Iniciar sesion</h3>
-              <label for="">Email</label>
-              <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar Email">
-              <label for="">Contraseña</label>
-              <input type="password" class="form-control" name="clave" id="clave"  placeholder="Ingresar Contraseña">
-            </div>
-                <div class="row  ml-2 mb-2 ">
-                <a href="finalizarCompra.php">Registrate</a>
-                </div>
-            <button type="submit" name="btnAction" value="finalizar"
-                  class="col gn-end btn btn-block btn-info "><a href="finalizarCompra.php" style="color:white;">Finalizar Compra</a> 
-             </button>
-        
-        </div>
-       
-    </div>
-</div>
+        <div class="row justify-content-center">
+                    <div class="col  col-lg-6"
+                    style="background:#DCDCDC; padding:15px">
 
+                <form method="post" action="finalizarCompra.php"> 
+                    <div class="form-group">
+                        <h3 class="row justify-content-center">Iniciar sesion</h3>
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="Ingresar Email" required>
+                    </div>
+                
+                    <button type="submit" name="btnAction" value="finalizar"
+                     class="col gn-end btn btn-block btn-info ">Continuar Pago
+                     </button>
+                    </div>
+                 </form>
+         </div>
 
              
                 
