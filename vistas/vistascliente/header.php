@@ -111,5 +111,28 @@ include("carrito.php");
             </div> 
            </div> 
           </div>
+
        </div> 
            
+
+          
+           <script>
+             $('#exampleModal').on('show.bs.modal', event => {
+               var button = $(event.relatedTarget);
+               var modal = $(this);
+               // Use above variables to manipulate the DOM
+               
+             });
+           </script> 
+     
+              <script>
+            function initFreshChat() {
+              window.fcWidget.init({a
+                token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
+                host: "https://wchat.freshchat.com"
+              });
+            }
+            function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+          </script>   
+      
+
