@@ -1,9 +1,7 @@
 <?php
  include("header.php");
-//  include("../../config/conn.php");
-//  include("carrito.php");
 ?>
-  <body>
+  
       <div id="carouselId" class="carousel slide d-sm-none d-md-block d-lg-block " data-ride="carousel">
           <ol class="carousel-indicators">
               <li data-target="#carouselId" data-slide-to="0" class="active"></li>
@@ -20,6 +18,7 @@
                   <img src="../../files/carousel/Imagen_Inicio2.jpg" height="500" width="100%" alt="Second slide">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
+                    
               </div>
               <div class="carousel-item">
                   <img src="../../files/carousel/Imagen_Inicio3.jpg" height="500" width="100%" alt="Third slide">

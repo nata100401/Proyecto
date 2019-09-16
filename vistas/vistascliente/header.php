@@ -1,6 +1,5 @@
 /*<?php
 include("carrito.php");
-
 ?>*/
 <!doctype html>
 <html lang="en">
@@ -54,25 +53,88 @@ include("carrito.php");
                                 ?> )
                           </a></button>
                           <button class="btn btn-outline-info my-3 my-sm-0" ><a href="mapa.php"><i class="fas fa-map-marker-alt" style="padding:5px; font-sixe:12px;"></i></a></button>
-                      <form class="form-inline my-2 my-lg-0">
                      
-                          <button class="btn btn-outline-info my-3 my-sm-0" type="submit" href="login.php"><i class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
+                          <button class="btn btn-outline-info my-3 my-sm-0" data-toggle="modal" data-target="#modelId"><i class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
                          
                           </i></button>
-                         
-                      </form>
-                  </div>
-              </nav>
-          </header>
-     </body>
-     <script>
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
-      host: "https://wchat.freshchat.com"
-    });
-  }
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-</script>   
-      </div>
+                  
+                    </div>
+                  </nav>
+               </header>
+            </div>
+          <!-- Button trigger modal -->
+      
+           <!-- Modal -->
+           <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" >
+           <div class="row  mt-5">
+           <div class="col-12
+            mr-2">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h5 class="modal-title">Iniciar Sesión</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                 <div class="modal-body">
+                   <div class="container-fluid">
+                   <div class="login-box">
+      <div class="login-box-body">
+        <p class="login-box-msg">Ingrese sus datos de acceso</p>
+    
+      <!-- Tab panes -->
+  
+    
+
+    <form method="post" id="frmAcceso">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email </label>
+          <input type="email" class="form-control" id="cliente" name="cliente" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">Ingresar su dirrecion de correo</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="clave" name="clave" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+
+      </div><!-- /.login-box-body -->
+    </div>
+                   </div>
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Save</button>
+                 </div>
+               </div>
+             </div>
+              </div>
+            </div> 
+          </div>
+          
+    
+           <!-- <script>
+             $('#exampleModal').on('show.bs.modal', event => {
+               var button = $(event.relatedTarget);
+               var modal = $(this);
+               // Use above variables to manipulate the DOM
+               
+             });
+           </script> 
+     
+              <script>
+            function initFreshChat() {
+              window.fcWidget.init({a
+                token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
+                host: "https://wchat.freshchat.com"
+              });
+            }
+            function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+          </script>    -->
       

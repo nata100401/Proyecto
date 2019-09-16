@@ -26,11 +26,6 @@
     margin-right: 6px;
 }
 
-footer{
-    background: lightgray;
-    margin-top: 2%;
-    padding: 1%;
-}
 .link2{
     z-index: 10;
     margin-top:25%;
@@ -58,8 +53,4 @@ footer{
     background: #DFDEDE;
    
 }
-footer ul li {
-	font-size: 32px;
-    list-style: none;
-    display: inline-block;  
-}
+

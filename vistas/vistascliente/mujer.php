@@ -24,7 +24,7 @@
                 <?php
                       include("../../config/conn.php");
                       $sql="SELECT  c.Nombre
-                      FROM    multimarcasramiriqui.Categoria c";
+                      FROM    bdmultimarcas.Categoria c";
                       $resultado=$base->prepare($sql);
                       $resultado->execute();
                       while($fila=$resultado->fetch(PDO::FETCH_ASSOC)):       
