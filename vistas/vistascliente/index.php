@@ -15,7 +15,7 @@
                   </div>
               </div>
               <div class="carousel-item">
-                  <img src="../../files/carousel/Imagen_Inicio2.jpg" height="500" width="100%" alt="Second slide">
+                  <img src="../../files/carousel/Imagen_Inicio1.jpg" height="500" width="100%" alt="Second slide">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
                     

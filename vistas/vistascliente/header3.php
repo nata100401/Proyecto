@@ -23,7 +23,7 @@ include("carrito.php");
     <link rel="stylesheet" href="../../public/css/cart_responsive.css">
    
 </head>
- <body>
+<body>
       <div class="container">
           <header class="row justify-content-center fixed-top bg-white ">
             <img src="../../files/logo.jpeg" alt="" class="row " height="60">
@@ -32,10 +32,10 @@ include("carrito.php");
                   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                       aria-expanded="false" aria-label="Toggle navigation"></button>
                   <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                           
                           <li class="nav-item dropdown">
-                            <a style="font-size:20px;" class="nav-link dropdown-toggle" href="mujer.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mujeres</a>
+                              <a style="font-size:20px;" class="nav-link dropdown-toggle" href="mujer.php" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mujeres</a>
                             
                           </li>
                           <li class="nav-item dropdown">
@@ -45,8 +45,8 @@ include("carrito.php");
                             <li class="nav-item dropdown">
                                     <a  style="font-size:20px;" class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kids</a>
                                    
-                           </li>
-                     </ul>
+                                </li>
+                      </ul>
                           <button class="btn btn-outline-info my-3 my-sm-0"><a   style="font-size:12px;" href="mostrarCarrito.php"><i class="fas fa-shopping-bag" style="padding:5px; font-sixe:12px;"></i>(
                                <?php
                                  echo(empty($_SESSION['carrito']))?0:count($_SESSION['carrito']);
@@ -54,18 +54,23 @@ include("carrito.php");
                           </a></button>
 
                           <button class="btn btn-outline-info my-3 my-sm-0" ><a href="mapa.php"><i class="fas fa-map-marker-alt" style="padding:5px; font-sixe:12px;"></i></a></button>
-    
-                          <button class="btn btn-outline-info my-3 my-sm-0" data-toggle="modal" data-target="#modelId"><i  style="font-size:22px;"class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
+                     
+                          <button class="btn btn-outline-info my-3 my-sm-0" data-toggle="modal" data-target="#modelId"><i class="fas fa-user-circle" style="padding:5px; font-sixe:12px;">
 
-                          </i></button>
-                          
-
+                        
+                   
+                  
                     </div>
                   </nav>
-         </header> 
+               </header>
+            </div>
+          <!-- Button trigger modal -->
+      
+           <!-- Modal -->
          <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" >
            <div class="row  mt-5">
-           <div class="col-12  mr-2">
+           <div class="col-12
+            mr-2">
              <div class="modal-dialog" role="document">
                <div class="modal-content">
                    <div class="modal-header">
@@ -83,33 +88,76 @@ include("carrito.php");
               
               
 
-                            <form method="post" id="frmAcceso">
-                                    <div class="form-group">
-                                    <label for="exampleInputEmail1">Email </label>
-                                    <input type="email" class="form-control" id="cliente" name="cliente" aria-describedby="emailHelp" placeholder="Enter email">
-                                    <small id="emailHelp" class="form-text text-muted">Ingresar su dirrecion de correo</small>
-                                    </div>
-                                    <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="clave" name="clave" placeholder="Password">
-                                    </div>
-                                   
-                                   
-                            </form>
+              <form method="post" id="frmAcceso">
+                      <div class="form-group">
+                      <label for="exampleInputEmail1">Email </label>
+                      <input type="email" class="form-control" id="cliente" name="cliente" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">Ingresar su dirrecion de correo</small>
+                      </div>
+                      <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="clave" name="clave" placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Ingresar</button>
+              </form>
 
               
+                       </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <a href="../vistasadmin/categoria.php"><button type="button" class="btn btn-primary">Ingresar</button></a>
+                            <button type="button" class="btn btn-primary">Save</button>
                           </div>
-                </div>
-              </div>
+               </div>
              </div>
+              </div>
             </div> 
-           </div> 
-          </div>
-       </div> 
-           
+          </div> 
+          </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <script>
+             $('#exampleModal').on('show.bs.modal', event => {
+               var button = $(event.relatedTarget);
+               var modal = $(this);
+               // Use above variables to manipulate the DOM
+               
+             });
+           </script> 
+     
+
+              <script>
+            function initFreshChat() {
+              window.fcWidget.init({a
+                token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
+                host: "https://wchat.freshchat.com"
+              });
+            }
+            function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+          </script>    
+      
