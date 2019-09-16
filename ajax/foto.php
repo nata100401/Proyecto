@@ -2,17 +2,13 @@
 	include("../modelos/Foto.php");
 	$Foto=new Foto();
 	$IdFoto="";
-	$IdPrenda="";
-    $IdCategoria="";
+	$IdExistencia="";
     $imagen="";
     if(isset($_POST["IdFoto"])){
         $IdFoto=$_POST["IdFoto"];
 	}
-	if(isset($_POST["IdPrenda"])){
-        $IdPrenda=$_POST["IdPrenda"];
-    }
-    if(isset($_POST["IdCategoria"])){
-        $IdCategoria=$_POST["IdCategoria"];
+	if(isset($_POST["IdExistencia"])){
+        $IdPrenda=$_POST["IdExistencia"];
     }
     if(isset($_POST["imagen"])){
         $imagen=$_POST["imagen"];
@@ -35,15 +31,15 @@
 			//microtime: renombra el archivo con un formato de tiempo para que no tener archivos repetidos
 			$imagen = round(microtime(true)) . '.' . end($ext);
 			//move_uploaded_file: copia el archivo de la ubicacion local y lo mueve a la carpeta del proyecto
-			move_uploaded_file($_FILES["imagen"]["tmp_name"], "....//files/articulos/" . $imagen);
+			move_uploaded_file($_FILES["imagen"]["tmp_name"], "..../files/colores/" . $imagen);
 		}
 		}
 		if (empty($IdFoto)){
-			$rspta=$Foto->insertar($IdPrenda, $IdCategoria, $imagen);
+			$rspta=$Foto->insertar($IdExistencia, $imagen);
 			echo $rspta ? "Foto registrada" : "Foto no se pudo registrar";
 		}
 		else {
-			$rspta=$articulo->editar($IdFoto,$IdPrenda, $IdCategoria, $imagen);
+			$rspta=$articulo->editar($IdFoto,$IdExistencia, $imagen);
 			echo $rspta ? "Foto actualizada" : "Foto no se pudo actualizar";
 		}
 	break;
@@ -61,10 +57,9 @@
 		while ($reg=$rspta->fetch_object()){
 			$data[]=array(
 			"0"=>'<button class="btn btn-warning" onclick="mostrar('.$reg->IdFoto.')"><i class="fa fa-pencil"></i></button>',
-			"1"=>$reg->nomprenda,
-			"2"=>$reg->nomcategoria,
+			"1"=>$reg->nomex,
 			//Muestra en una etiqueta img la imagen
-			"3"=>"<img src='../files/articulos/".$reg->imagen."' height='50px' width='50px' >"
+			"3"=>"<img src='../files/colores/".$reg->imagen."' height='50px' width='50px' >"
 			//Muestra la palabra Activado o Desactivado con color para que sea más claro
 			);
 		}
@@ -78,21 +73,14 @@
 
 	break;
 	
-	case 'selectPrenda':
-		$rspta = $Foto->selectPren();
+	case 'selectExistencia':
+		$rspta = $Foto->selectEx();
 		while ($reg = $rspta->fetch_object())
 		{
-			echo '<option value="'. $reg->IdPrenda .'">' . $reg->Descripcion .'</option>';
+			echo '<option value="'. $reg->IdExistencia .'">' . $reg->Numero .'</option>';
 		}
     break; 
     
-    case 'selectCategoria':
-		$rspta = $Foto->selectCat();
-		while ($reg = $rspta->fetch_object())
-		{
-			echo '<option value="'. $reg->IdCategoria .'">' . $reg->Nombre .'</option>';
-		}
-	break;
     }
     
 

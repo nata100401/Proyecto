@@ -2,7 +2,7 @@
  include("header.php");
 
 ?>
-  <body>
+  <body> 
       <div class="alert alert-success mb-5">
       <?php
          echo $mensaje;

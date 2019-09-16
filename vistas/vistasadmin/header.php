@@ -75,7 +75,7 @@
             </li>  
 
             <li class="treeview">
-              <a href="https://mail.google.com/mail/u/0/#inbox">
+              <a href="https://web.freshchat.com/a/266397194155582/inbox/0/0/conversation/266400182657982">
               <i style="color:black" class="fa fa-envelope"></i> 
               <span style="color:black">Bandeja de entrada</span>
               </a>
@@ -94,15 +94,6 @@
               </a>
             </li>  
 
-
-            <li class="treeview">
-              <a href="indexEstadisticas.php">
-              <i style="color:black" class="fa fa-area-chart"></i> 
-              <span style="color:black">Estadisticas</span>
-              </a>
-              </li>
-              </a>
-            </li>  
 
             <li class="treeview">
               <a href="#">
@@ -166,25 +157,7 @@
             </li>  
   
 
-            <li class="treeview">
-              <a href="vistas.php">
-              <i style="color:black" class="fa fa-calendar-o"></i> 
-              <span style="color:black">Vistas</span>
-              </a>
-              </li>
-              </a>
-            </li>  
-
             </ul>
 </body>
-<script>
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
-      host: "https://wchat.freshchat.com"
-    });
-  }
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-</script>
         </section>
       </aside>

@@ -11,48 +11,42 @@
         }
 
         //Método para insertar registros
-        public function insertar($IdPrenda, $IdCategoria, $imagen)
+        public function insertar($IdExistencia, $imagen)
         {
-            $sql="INSERT INTO foto(IdPrenda, IdCategoria, imagen)
-            VALUES ('$IdPrenda', '$IdCategoria', '$imagen')";
+            $sql="INSERT INTO foto(IdExistencia, imagen)
+            VALUES ('$IdExistencia', '$imagen')";
             return ejecutarConsulta($sql);
         }
         //Método para editar registros
-	public function editar($IdFoto,$IdPrenda, $IdCategoria, $imagen)
+	public function editar($IdFoto,$IdExistencia, $imagen)
 	{
-		$sql="UPDATE foto SET IdPrenda='$IdPrenda',IdCategoria='$IdCategoria',imagen='$imagen' WHERE IdFoto='$IdFoto'";
+		$sql="UPDATE foto SET IdExistencia='$IdExistencia',imagen='$imagen' WHERE IdFoto='$IdFoto'";
 		return ejecutarConsulta($sql);
 	}
 
 	//Método para mostrar los datos de un registro a modificar
 	public function mostrar($IdFoto)
 	{
-		$sql="SELECT * FROM foto WHERE IdFoto='$IdFoto'";
+		$sql="SELECT * FROM dbmultimarcas.foto WHERE IdFoto='$IdFoto'";
 		return consultarUnaFila($sql);
 	}
 
 	//Método para listar los registros
 	public function listar()
 	{
-		$sql="SELECT p.Descripcion as nomprenda,c.Nombre as nomcategoria, f.IdFoto,f.IdPrenda, f.IdCategoria,f.Imagen
-		FROM prenda p, foto f, categoria c
-            WHERE p.IdPrenda=f.IdPrenda AND c.IdCategoria=f.IdCategoria";
+		$sql="SELECT e.Numero as nomex, f.IdFoto,f.IdExistencia,f.Imagen
+		FROM dbmultimarcas.existencia e, dbmultimarcas.foto f
+            WHERE e.IdExistencia=f.IdExistencia";
 		return ejecutarConsulta($sql);		
     }
 
-    public function selectPren()
+    public function selectEx()
     {
         $sql="SELECT *
-        FROM prenda ORDER BY Descripcion";
+        FROM dbmultimarcas.existencia";
         return ejecutarConsulta($sql);
     }
     
-    public function selectCat()
-    {
-        $sql="SELECT *
-        FROM categoria ORDER BY Nombre";
-        return ejecutarConsulta($sql);
-	}
 
 	
     }

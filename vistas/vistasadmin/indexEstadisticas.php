@@ -1,5 +1,5 @@
 <?php
-include("../config/global.php");
+include("../../config/global.php");
    $sql = "SELECT IdFactura,Domicilio
     FROM Factura
     ORDER BY Domicilio, IdFfactura"
