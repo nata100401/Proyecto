@@ -24,7 +24,7 @@
                 <?php
                       include("../../config/conn.php");
                       $sql="SELECT  c.Nombre
-                      FROM    multimarcasramiriqui.Categoria c";
+                      FROM    bdmultimarcas.Categoria c";
                       $resultado=$base->prepare($sql);
                       $resultado->execute();
                       while($fila=$resultado->fetch(PDO::FETCH_ASSOC)):       
@@ -45,7 +45,7 @@
                       <?php
                         include("../../config/conn.php");
                         $sql="SELECT  p.idPrenda, p.Nombre,p.Descripcion, p.Precio, p.imagenprincipal
-                              FROM    multimarcasramiriqui.prenda p, multimarcasramiriqui.existencia e
+                              FROM    bdmultimarcas.prenda p, bdmultimarcas.existencia e
                               WHERE   p.IdPrenda=e.IdPrenda AND
                                       p.Genero='Hombre' 
                               GROUP BY p.Descripcion, p.Precio, p.imagenprincipal

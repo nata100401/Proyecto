@@ -21,8 +21,7 @@ require 'header.php';
                       <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
                           <thead>
                             <th>Opciones</th>
-                            <th>Prenda</th>
-                            <th>Categoria</th>
+                            <th>Existencia</th>
                             <th>Imagen</th>
                           </thead>
                           <tbody>                            
@@ -37,15 +36,10 @@ require 'header.php';
                           <input type="text" name="IdFoto" id="IdFoto">
 
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Prenda:</label>
-                            <select id="IdPrenda" name="IdPrenda" class="form-control selectpicker" data-live-search="true" required></select>
+                            <label>Existencia:</label>
+                            <select id="IdExistencia" name="IdExistencia" class="form-control selectpicker" data-live-search="true" required></select>
                           </div>
 
-                          <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <label>Categoría:</label>
-                            <select id="IdCategoria" name="IdCategoria" class="form-control selectpicker" data-live-search="true" required></select>
-                          </div>
-                          
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Imagen:</label>
                             <input type="file" class="form-control" name="imagen" id="imagen">

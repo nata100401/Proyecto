@@ -1,5 +1,5 @@
 var tabla;
-
+ 
 function init(){
 	mostrarform(false);
 	listar();
@@ -14,6 +14,7 @@ function init(){
 
 function limpiar()
 {
+	$("#Nombre").val("");
 	$("#imagenmuestra").attr("src","");
 	$("#imagenactual").val("");
 	$("#IdColor").val("");
@@ -93,7 +94,7 @@ function guardaryeditar(e)
 	    }
 
 	});
-	limpiar();
+	limpiar(); 
 }
 
 function mostrar(IdColor)
@@ -102,6 +103,7 @@ function mostrar(IdColor)
 	{
 		data = JSON.parse(data);		
 		mostrarform(true);
+		$("#Nombre").val(data.Nombre);
 		$("#imagenmuestra").show();
 		$("#imagenmuestra").attr("src","../files/colores/"+data.Imagen);
 		$("#imagenactual").val(data.Imagen);

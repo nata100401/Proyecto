@@ -10,7 +10,7 @@ require 'header.php';
               <div class="col-md-12">
                   <div class="box">
                     <div class="box-header with-border">
-                          <h1 class="box-title">Artículo<button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
+                          <h1 class="box-title">Color<button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
                         <div class="box-tools pull-right">
                         </div>
                     </div>
@@ -21,6 +21,7 @@ require 'header.php';
                       <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
                           <thead>
                             <th>Opciones</th>
+                            <th>Nombre</th>
                             <th>Imagen</th>
                           </thead>
                           <tbody>                            
@@ -33,6 +34,12 @@ require 'header.php';
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <input type="hidden" name="IdColor" id="IdColor">
                           </div>
+
+                          <div class="form-group col-lg-6 col-md-6 col-ms-6 col-xs-12">
+							  <label >Nombre:</label>
+							  <input type="text" name="Nombre" id="Nombre" maxlength="256" class="form-control" placeholder="Nombre" >
+              </div>
+              
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Imagen:</label>
                             <input type="file" class="form-control" name="Imagen" id="Imagen">
@@ -59,7 +66,6 @@ require 'header.php';
 require 'footer.php';
 ?>
 <script type="text/javascript" src="../public/js/JsBarcode.all.min.js"></script>
-<script type="text/javascript" src="../public/js/jquery.PrintArea.js"></script>
 <script src="../Scripts/color.js"></script>
 
 

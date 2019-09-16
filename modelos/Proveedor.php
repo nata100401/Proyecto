@@ -21,7 +21,7 @@
 
 	public function mostrar($IdProveedor)
     {
-        $sql="SELECT * FROM proveedor
+        $sql="SELECT * FROM bdmultimarcas.proveedor
         WHERE IdProveedor='$IdProveedor'";
         return consultarUnaFila($sql);
     }
@@ -29,21 +29,21 @@
     public function listar()
 	{ 
 		$sql="SELECT d.Nombre as nomdepto,c.Nombre as nomciudad, p.Nombre,p.Telefonos,p.NIT,p.Email
-        FROM departamento d, proveedor p, ciudad c
+        FROM bdmultimarcas.departamento d, bdmultimarcas.proveedor p, bdmultimarcas.ciudad c
         WHERE d.IdDepartamento=p.IdDepartamento AND c.IdCiudad=p.IdCiudad";
 		return ejecutarConsulta($sql);		
 	}
 	public function selectDep()
 	{
 	    $sql="SELECT *
-        FROM departamento ORDER BY nombre";
+        FROM bdmultimarcas.departamento ORDER BY nombre";
 	    return ejecutarConsulta($sql);		
     }
 
 	public function selectCiu($IdDepa)
 	{
 	    $sql="SELECT * 
-        FROM ciudad 
+        FROM bdmultimarcas.ciudad 
         WHERE IdDepartamento= '$IdDepa'
         ORDER BY nombre";
 	return ejecutarConsulta($sql);		

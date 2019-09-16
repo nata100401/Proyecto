@@ -12,17 +12,11 @@ function init(){
 
 	//Cargar los items al select categoria
 	//r: son las opciones que devuelve el archivo ajax/articulo.php con el valor selectCategoria
-    $.post("../../ajax/foto.php?op=selectPrenda", function(r){
-        $("#IdPrenda").html(r);
-        $("#IdPrenda").selectpicker('refresh');
+    $.post("../../ajax/foto.php?op=selectExistencia", function(r){
+        $("#IdExistencia").html(r);
+        $("#IdExistencia").selectpicker('refresh');
 
 });
-
-    $.post("../../ajax/foto.php?op=selectCategoria", function(r){
-	    $("#IdCategoria").html(r);
-	    $("#IdCategoria").selectpicker('refresh');
-
-	});
 
 	$("#imagenmuestra").hide();
 }
@@ -116,28 +110,6 @@ function guardaryeditar(e)
 	limpiar();
 }
 
-/*function mostrar(idarticulo)
-{
-	$.post("../ajax/articulo.php?op=mostrar",{idarticulo : idarticulo}, function(data, status)
-	{
-		data = JSON.parse(data);		
-		mostrarform(true);
-
-		$("#idcategoria").val(data.idcategoria);
-		$('#idcategoria').selectpicker('refresh');
-		$("#codigo").val(data.codigo);
-		$("#nombre").val(data.nombre);
-		$("#stock").val(data.stock);
-		$("#descripcion").val(data.descripcion);
-		$("#imagenmuestra").show();
-		$("#imagenmuestra").attr("src","../files/articulos/"+data.imagen);
-		$("#imagenactual").val(data.imagen);
- 		$("#idarticulo").val(data.idarticulo);
- 		generarbarcode();
-
- 	})
-}*/
-
 
 function mostrar(IdFoto)
 {
@@ -145,12 +117,10 @@ function mostrar(IdFoto)
 	{
 		data = JSON.parse(data);		
 		mostrarform(true);
-		$("#IdPrenda").val(data.IdPrenda);
-        $('#IdPrenda').selectpicker('refresh');
-        $("#IdCategoria").val(data.IdCategoria);
-		$('#IdCategoria').selectpicker('refresh');
+		$("#IdExistencia").val(data.IdExistencia);
+        $('#IdExistencia').selectpicker('refresh');
 		$("#imagenmuestra").show();
-		$("#imagenmuestra").attr("src","../../files/articulos/"+data.imagen);
+		$("#imagenmuestra").attr("src","../../files/colores/"+data.imagen);
 		$("#imagenactual").val(data.imagen);
 		 $("#IdFoto").val(data.IdFoto);
  	})

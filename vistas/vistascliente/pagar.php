@@ -13,7 +13,7 @@
     ?>
 
       <div class="row">
-         <h1 style="margin-top:200px">hola<?php echo $total?></h1> 
+         <h1 style="margin-top:200px">PayPal  total a pagar:   $<?php echo $total?></h1> 
       </div>
     <?php
     }

@@ -1,3 +1,4 @@
+
                            <div class="row justify-content-end  mr-auto"style="margin-top:200px;">
                                 <div class="col-2"><img class="img-fluid" height="380px"  src="../../public/img/gobernacion.png" alt=""></div>
                                 <div class="col-2"><img class="img-fluid"   src="../../public/img/vivelab.png" alt=""></div>
@@ -146,6 +147,57 @@
 
 </footer>
 <!-- Footer -->
+<strong >Colaboración de:<br><br><br>
+<div class="row justify-content-start" >
+
+        <li style="list-style:none; " ><a href="http://senacentrogestiontunja.blogspot.com/" class="new_win"><span><img style=" width:100px;" src="../../public/img/sena.png"></span></a></li>
+        <li style="list-style:none; " ><a href="http://www.boyaca.gov.co/" class="new_win"><span><img  style=" width:150px;"  src="../../public/img/gobernacion.png"></span></a></li>
+        <li style="list-style:none; " ><a href="http://www.boyaca.gov.co/prensa-publicaciones/noticias/8944-vivelab-tunja,-un-laboratorio-gratuito-para-los-boyacenses-innovadores" class="new_win"><span><img  style=" width:200px;" src="../../public/img/vivelab.png"></span></a></li>
+
+</div>
+       
+<footer  >
+            <div class="container"> 
+                  <ul>
+                             <div class="row justify-content-center">
+                             <div class="col-3 pt-3 ml-auto"> <h5>Medios de pago</h5> </div>
+                             <div class="col-4 mr-auto ">
+                              <li><a href="#"><i class="fab fa-cc-mastercard "></i></a></li>&emsp;
+                               <li><a href="#"><i class="fab fa-cc-visa "></i></a></li>&emsp;
+                               <li><a href="#"><i class="fas fa-hand-holding-usd "></i></i></a></li>&emsp;
+                               <li><a href="#"> <i class="fas fa-money-bill-alt "></i></i></a></li>
+                             </div>               
+                         </ul>
+               <div class="row ">
+                   <div class="col-2">
+ 
+                   </div>
+                   <div class="col">
+                         <h5>Compras</h5>
+                         <a href="google">Guia de Tallas</a><br>
+                         <a href="google">Formas de Pago</a>
+                   </div>
+                         <div class="col">
+                             <h5>Servicio</h5>
+                             <a href="google">Llamanos</a><br>
+                             <a href="google">Contactanos</a>
+                         </div>
+                       
+                             <div class="col">
+                                     <h5>Politicas</h5>
+                                     <a href="google">Términos y Condiciones</a><br>
+                                     <a href="google">Cambios y Devoluciones</a>
+                                 </div>
+                     </div>
+                 
+                         
+                    
+           </div>
+         
+    
+       </footer>
+       
+>>>>>>> 87fb682b897f85671e16c80312ccdcdcdef5d0b0
       
       
     <!-- Optional JavaScript -->

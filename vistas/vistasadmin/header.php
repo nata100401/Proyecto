@@ -75,7 +75,7 @@
             </li>  
 
             <li class="treeview">
-              <a href="https://mail.google.com/mail/u/0/#inbox">
+              <a href="https://web.freshchat.com/a/266397194155582/inbox/0/0/conversation/266400182657982">
               <i style="color:black" class="fa fa-envelope"></i> 
               <span style="color:black">Bandeja de entrada</span>
               </a>
@@ -96,15 +96,6 @@
 
 
             <li class="treeview">
-              <a href="indexEstadisticas.php">
-              <i style="color:black" class="fa fa-area-chart"></i> 
-              <span style="color:black">Estadisticas</span>
-              </a>
-              </li>
-              </a>
-            </li>  
-
-            <li class="treeview">
               <a href="#">
                 <i style="color:black" class="fa fa-laptop"></i>
                 <span style="color:black">Almacén</span>
@@ -113,6 +104,8 @@
               <ul class="treeview-menu">
                 <li><a href="prenda.php"><i class="fa fa-circle-o"></i> Prendas</a></li>
                 <li><a href="categoria.php"><i class="fa fa-circle-o"></i> Categorías</a></li>
+                <li><a href="color.php"><i class="fa fa-circle-o"></i> Color</a></li>
+                <li><a href="foto.php"><i class="fa fa-circle-o"></i> Fotos de prendas</a></li>
               </ul>
             </li>
             
@@ -125,6 +118,7 @@
               <ul class="treeview-menu">
                 <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-circle-o"></i> Detalle de Factura</a></li>
                 <li><a href="proveedor.php"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+                <li><a href="prenda.php"><i class="fa fa-circle-o"></i> Prenda</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -137,6 +131,8 @@
               <ul class="treeview-menu">
                 <li><a href="empleado.php"><i class="fa fa-circle-o"></i> Empleados</a></li>
                 <li><a href="cliente.php"><i class="fa fa-circle-o"></i> Clientes</a></li>
+                <li><a href="entrada.php"><i class="fa fa-circle-o"></i> Entradas</a></li>
+                <li><a href="existencia.php"><i class="fa fa-circle-o"></i> Existencias</a></li>
                 
               </ul>
             </li>
@@ -161,25 +157,7 @@
             </li>  
   
 
-            <li class="treeview">
-              <a href="vistas.php">
-              <i style="color:black" class="fa fa-calendar-o"></i> 
-              <span style="color:black">Vistas</span>
-              </a>
-              </li>
-              </a>
-            </li>  
-
             </ul>
 </body>
-<script>
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "cd3f5466-8721-4bb5-ae74-f90e9a1e755c",
-      host: "https://wchat.freshchat.com"
-    });
-  }
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-</script>
         </section>
       </aside>
